@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Age calculator app</title>
+
+  <link rel="stylesheet" href="./css/stylesheet.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="calc-flex">
+      <div class="calc-container">
+        <!-- For the Day -->
+        <span>Day</span>
+        <input type="number" id="day" placeholder="DD">
+        <small class="day-error"></small>
+      </div>
+
+      <!-- For the Month -->
+      <div class="calc-container">
+        <span>Month</span>
+        <input type="number" id="month" placeholder="MM">
+        <small class="month-error"></small>
+      </div>
+
+      <!-- For the Year -->
+      <div class="calc-container">
+        <span>Year</span>
+        <input type="number" id="year" placeholder="YYYY">
+        <small class="year-error"></small>
+      </div>
+    </div>
+
+    <!-- For the Submit button -->
+    <button class="btn">
+     <img src="./assets/images/icon-arrow.svg" alt="submit-arrow">
+    </button>
+
+    <!-- For the Output -->
+    <div class="output">
+     <div><h1><span class="year-output">--</span>years</h1></div>
+     <h1><span class="month-output">--</span>months</h1>
+     <h1><span class="day-output">--</span>days</h1>
+    </div>
+
+  </div>
+
+ <script src="./js/script.js"></script>
+</body>
+</html>
