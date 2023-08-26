@@ -1,4 +1,4 @@
-"Use strict"
+"use strict"
 // For Output
 const year_output = document.querySelector(".year-output");
 const month_output = document.querySelector(".month-output");
@@ -78,6 +78,13 @@ year_input.addEventListener('input', (e) => {
     }
 })
 
+const ageYears = localStorage.getItem('ageYears') ||'--';
+const ageMonths = localStorage.getItem('ageMonth') || '--';
+const ageDays = localStorage.getItem('ageDay') || '--';
+day_output.textContent = ageDays;
+month_output.textContent = ageMonths;
+year_output.textContent = ageYears;
+
 function CalculateAge() {
     if (ifValid) {
     let birthDate = `${month_input.value}/${day_input.value}/${year_input.value}`;
@@ -99,8 +106,9 @@ function CalculateAge() {
     else {
         alert('error');
     }
+
+    // const ageYears = localStorage.getItem('ageYears') ||'--';
+    // const ageMonth = localStorage.getItem('ageMonth') || '--';
+    // const ageDay = localStorage.getItem('ageDay') || '--';
+
 }
-
-
-
-
